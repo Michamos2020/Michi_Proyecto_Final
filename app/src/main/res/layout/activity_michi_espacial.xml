@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gatu"
+    android:onClick="Enviar"
+    tools:context=".MichiEspacial">
+
+    <Spinner
+        android:id="@+id/spinner_espacial"
+        android:layout_width="328dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_peso" />
+
+    <Button
+        android:id="@+id/regresa_espacial"
+        android:layout_width="139dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="52dp"
+        android:background="#0C0C0C"
+        android:onClick="Regresar"
+        android:text="@string/btn_calcular_regresa_espacial"
+        android:textColor="#F3EFEF"
+        android:textColorHighlight="#090D27"
+        android:textColorHint="#060B22"
+        android:textColorLink="#010413"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_espacial"
+        app:layout_constraintVertical_bias="0.233" />
+
+    <EditText
+        android:id="@+id/txt_peso"
+        android:layout_width="343dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="#0E0C0C"
+        android:ems="10"
+        android:hint="Ingresa                Peso"
+        android:inputType="numberSigned"
+        android:textColor="#F4ECEC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_espacial" />
+
+    <TextView
+        android:id="@+id/tv_espacial"
+        android:layout_width="316dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="48dp"
+        android:background="#231C1C"
+        android:text="@string/tv_espacial"
+        android:textColor="#D3C5C5"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_enviar"
+        android:layout_width="119dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="143dp"
+        android:backgroundTint="#090808"
+        android:text="@string/btn_calcular_espacial"
+        android:textColorHint="#FAF7F7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/regresa_espacial"
+        app:layout_constraintHorizontal_bias="0.569"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_espacial"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
